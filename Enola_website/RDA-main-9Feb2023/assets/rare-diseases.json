@@ -1,0 +1,853 @@
+[
+  {
+    "Disease": "Hereditary neuropathy with liability to pressure palsies", 
+    "Disease_CUI": "C0393814", 
+    "Disease_Definition": "A rare neurologic disease characterized by recurrent mononeuropathies usually triggered by minor physical activities innocuous to healthy people.", 
+    "Disease_Finding_Assoc_Evidence": null, 
+    "Disease_Prevalence": 0.000175, 
+    "Disease_Probability": -18.2530288723, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.895, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C0728829", 
+        "Frequency": 0.17, 
+        "Name": "Pes cavus"
+      }, 
+      {
+        "CUI": "C4021776", 
+        "Frequency": 0.17, 
+        "Name": "Abnormality of the voice"
+      }, 
+      {
+        "CUI": "C4025709", 
+        "Frequency": 0.17, 
+        "Name": "Cranial nerve paralysis"
+      }, 
+      {
+        "CUI": "C0700208", 
+        "Frequency": 0.545, 
+        "Name": "Scoliosis"
+      }, 
+      {
+        "CUI": "C1858729", 
+        "Frequency": 0.895, 
+        "Name": "Decreased motor nerve conduction velocity"
+      }, 
+      {
+        "CUI": "C1854345", 
+        "Frequency": 0.17, 
+        "Name": "Vocal cord paralysis"
+      }, 
+      {
+        "CUI": "C4020855", 
+        "Frequency": 0.17, 
+        "Name": "Respiratory insufficiency"
+      }, 
+      {
+        "CUI": "C0700078", 
+        "Frequency": 0.17, 
+        "Name": "Hyporeflexia"
+      }, 
+      {
+        "CUI": "C0030554", 
+        "Frequency": 0.545, 
+        "Name": "Paresthesia"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Late-onset distal myopathy, Markesbery-Griggs type", 
+    "Disease_CUI": "C1836155", 
+    "Disease_Definition": "A rare, genetic, non-dystrophic myofibrillar myopathy disorder characterized by late-adult onset of distal and/or proximal limb muscle weakness with initial involvement of posterior lower leg muscles, medial gastrocnemius and soleus. Patients present with ankle weakness followed by weakness of finger and wrist extensors and later on of proximal muscles. Ambulation is usually preserved. Late-onset associated cardiomyopathy and/or neuropathy has been reported in a minority of cases.", 
+    "Disease_Finding_Assoc_Evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/25037092", 
+      "https://pubmed.ncbi.nlm.nih.gov/15668942", 
+      "https://pubmed.ncbi.nlm.nih.gov/20809097", 
+      "https://pubmed.ncbi.nlm.nih.gov/16684602"
+    ], 
+    "Disease_Prevalence": 1e-06, 
+    "Disease_Probability": -27.5619435631, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.025, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C0553982", 
+        "Frequency": 0.025, 
+        "Name": "Abnormal left ventricular function"
+      }, 
+      {
+        "CUI": "C0575081", 
+        "Frequency": 0.025, 
+        "Name": "Gait disturbance"
+      }, 
+      {
+        "CUI": "C0746674", 
+        "Frequency": 0.025, 
+        "Name": "Generalized muscle weakness"
+      }, 
+      {
+        "CUI": "C1836156", 
+        "Frequency": 0.545, 
+        "Name": "Progressive proximal muscle weakness"
+      }, 
+      {
+        "CUI": "C4024610", 
+        "Frequency": 0.17, 
+        "Name": "Leg muscle stiffness"
+      }, 
+      {
+        "CUI": "C0018794", 
+        "Frequency": 0.025, 
+        "Name": "Heart block"
+      }, 
+      {
+        "CUI": "C4024601", 
+        "Frequency": 0.17, 
+        "Name": "Weakness of long finger extensor muscles"
+      }, 
+      {
+        "CUI": "C1866012", 
+        "Frequency": 0.025, 
+        "Name": "Proximal muscle weakness in upper limbs"
+      }, 
+      {
+        "CUI": "C3277184", 
+        "Frequency": 0.025, 
+        "Name": "Decreased patellar reflex"
+      }, 
+      {
+        "CUI": "C0878544", 
+        "Frequency": 0.025, 
+        "Name": "Cardiomyopathy"
+      }, 
+      {
+        "CUI": "C1849097", 
+        "Frequency": "Null", 
+        "Name": "Loss of ability to walk"
+      }, 
+      {
+        "CUI": "C1836843", 
+        "Frequency": "Null", 
+        "Name": "Loss of ambulation"
+      }, 
+      {
+        "CUI": "C1864716", 
+        "Frequency": 0.545, 
+        "Name": "Intrinsic hand muscle atrophy"
+      }, 
+      {
+        "CUI": "C0243050", 
+        "Frequency": 0.17, 
+        "Name": "Abnormality of the cardiovascular system"
+      }, 
+      {
+        "CUI": "C1858127", 
+        "Frequency": 0.025, 
+        "Name": "Limb-girdle muscle weakness"
+      }, 
+      {
+        "CUI": "C1834536", 
+        "Frequency": 0.17, 
+        "Name": "Weakness of the intrinsic hand muscles"
+      }, 
+      {
+        "CUI": "C1866141", 
+        "Frequency": 0.025, 
+        "Name": "Foot dorsiflexor weakness"
+      }, 
+      {
+        "CUI": "C1837323", 
+        "Frequency": 0.025, 
+        "Name": "Decreased Achilles reflex"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Neuralgic amyotrophy", 
+    "Disease_CUI": "C1510479", 
+    "Disease_Definition": "A rare disorder of the peripheral nervous system characterized by the sudden onset of extreme pain in the upper extremity followed by rapid multifocal motor weakness and atrophy and a slow recovery in months to years. NA includes both an idiopathic (INA, also known as Parsonage-Turner syndrome) and hereditary (HNA) form.", 
+    "Disease_Finding_Assoc_Evidence": null, 
+    "Disease_Prevalence": 0.0003, 
+    "Disease_Probability": -51.9556183736, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.17, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C4072849", 
+        "Frequency": 0.545, 
+        "Name": "Scapular winging"
+      }, 
+      {
+        "CUI": "C0026034", 
+        "Frequency": 0.17, 
+        "Name": "Narrow mouth"
+      }, 
+      {
+        "CUI": "C1856468", 
+        "Frequency": 0.17, 
+        "Name": "Round face"
+      }, 
+      {
+        "CUI": "C0152438", 
+        "Frequency": 0.545, 
+        "Name": "Sprengel anomaly"
+      }, 
+      {
+        "CUI": "C0037822", 
+        "Frequency": 0.17, 
+        "Name": "Neurological speech impairment"
+      }, 
+      {
+        "CUI": "C0003862", 
+        "Frequency": 0.895, 
+        "Name": "Arthralgia"
+      }, 
+      {
+        "CUI": "C0349588", 
+        "Frequency": 0.17, 
+        "Name": "Short stature"
+      }, 
+      {
+        "CUI": "C2981150", 
+        "Frequency": 0.17, 
+        "Name": "Cleft palate"
+      }, 
+      {
+        "CUI": "C0476403", 
+        "Frequency": 0.895, 
+        "Name": "EMG abnormality"
+      }, 
+      {
+        "CUI": "C0151786", 
+        "Frequency": 0.895, 
+        "Name": "Muscle weakness"
+      }, 
+      {
+        "CUI": "C0030554", 
+        "Frequency": 0.545, 
+        "Name": "Paresthesia"
+      }, 
+      {
+        "CUI": "C0152025", 
+        "Frequency": 0.895, 
+        "Name": "Polyneuropathy"
+      }, 
+      {
+        "CUI": "C0037317", 
+        "Frequency": 0.17, 
+        "Name": "Sleep disturbance"
+      }, 
+      {
+        "CUI": "C4020855", 
+        "Frequency": 0.17, 
+        "Name": "Respiratory insufficiency"
+      }, 
+      {
+        "CUI": "C0221347", 
+        "Frequency": 0.17, 
+        "Name": "Acrocyanosis"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Autosomal recessive spastic paraplegia type 70", 
+    "Disease_CUI": null, 
+    "Disease_Definition": "Autosomal recessive spastic paraplegia type 70 is a very rare, complex subtype of hereditary spastic paraplegia that presents in infancy with delayed motor development (i.e. crawling, walking) and is characterized by lower limb spasticity, increased deep tendon reflexes, extensor plantar responses, impaired vibratory sensation at ankles, amyotrophy and borderline intellectual disability. Additional signs may include gait disturbances, Achilles tendon contractures, scoliosis and cerebellar abnormalities.", 
+    "Disease_Finding_Assoc_Evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/24482476", 
+      "https://pubmed.ncbi.nlm.nih.gov/27271711", 
+      "https://pubmed.ncbi.nlm.nih.gov/27217339", 
+      "https://pubmed.ncbi.nlm.nih.gov/24954637"
+    ], 
+    "Disease_Prevalence": 1e-06, 
+    "Disease_Probability": -53.0515605426, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.545, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C1271100", 
+        "Frequency": 0.545, 
+        "Name": "Lower limb spasticity"
+      }, 
+      {
+        "CUI": "C0026650", 
+        "Frequency": 0.545, 
+        "Name": "Abnormality of movement"
+      }, 
+      {
+        "CUI": "C0027726", 
+        "Frequency": 0.025, 
+        "Name": "Nephrotic syndrome"
+      }, 
+      {
+        "CUI": "C0239842", 
+        "Frequency": 0.545, 
+        "Name": "Hand tremor"
+      }, 
+      {
+        "CUI": "C0206062", 
+        "Frequency": 0.545, 
+        "Name": "Abnormal pulmonary interstitial morphology"
+      }, 
+      {
+        "CUI": "C0026106", 
+        "Frequency": 0.545, 
+        "Name": "Intellectual disability, mild"
+      }, 
+      {
+        "CUI": "C4020875", 
+        "Frequency": 0.545, 
+        "Name": "Global developmental delay"
+      }, 
+      {
+        "CUI": "C1855483", 
+        "Frequency": 0.545, 
+        "Name": "Progressive spastic paraplegia"
+      }, 
+      {
+        "CUI": "C1857704", 
+        "Frequency": 0.545, 
+        "Name": "Abnormal myelination"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Non-histaminic angioedema", 
+    "Disease_CUI": null, 
+    "Disease_Definition": "A disorder that is characterized by the occurrence of transitory and recurrent subcutaneous and/or submucosal edemas resulting in swelling and/or abdominal pain.", 
+    "Disease_Finding_Assoc_Evidence": null, 
+    "Disease_Prevalence": 5e-05, 
+    "Disease_Probability": -56.4993964872, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.17, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C0268731", 
+        "Frequency": 0.17, 
+        "Name": "Glomerulopathy"
+      }, 
+      {
+        "CUI": "C0002994", 
+        "Frequency": 0.895, 
+        "Name": "Angioedema"
+      }, 
+      {
+        "CUI": "C0027498", 
+        "Frequency": 0.545, 
+        "Name": "Nausea and vomiting"
+      }, 
+      {
+        "CUI": "C0151786", 
+        "Frequency": 0.17, 
+        "Name": "Muscle weakness"
+      }, 
+      {
+        "CUI": "C0427546", 
+        "Frequency": 0.17, 
+        "Name": "Abnormal lymphocyte morphology"
+      }, 
+      {
+        "CUI": "C0033774", 
+        "Frequency": 0.545, 
+        "Name": "Pruritus"
+      }, 
+      {
+        "CUI": "C0015230", 
+        "Frequency": 0.17, 
+        "Name": "Skin rash"
+      }, 
+      {
+        "CUI": "C0011991", 
+        "Frequency": 0.545, 
+        "Name": "Diarrhea"
+      }, 
+      {
+        "CUI": "C0034063", 
+        "Frequency": 0.545, 
+        "Name": "Pulmonary edema"
+      }, 
+      {
+        "CUI": "C0239340", 
+        "Frequency": 0.545, 
+        "Name": "Pedal edema"
+      }, 
+      {
+        "CUI": "C0162285", 
+        "Frequency": 0.17, 
+        "Name": "Palpebral edema"
+      }, 
+      {
+        "CUI": "C0029927", 
+        "Frequency": 0.17, 
+        "Name": "Ovarian cyst"
+      }, 
+      {
+        "CUI": "C0003962", 
+        "Frequency": 0.17, 
+        "Name": "Ascites"
+      }, 
+      {
+        "CUI": "C0013604", 
+        "Frequency": 0.895, 
+        "Name": "Edema"
+      }, 
+      {
+        "CUI": "C0024314", 
+        "Frequency": 0.17, 
+        "Name": "Lymphoproliferative disorder"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Leber hereditary optic neuropathy", 
+    "Disease_CUI": "C0917796", 
+    "Disease_Definition": "A rare hereditary optic neuropathy characterized by sudden onset, painless central vision loss, loss of retinal ganglion cells and optic atrophy.", 
+    "Disease_Finding_Assoc_Evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/20301353"
+    ], 
+    "Disease_Prevalence": 5e-05, 
+    "Disease_Probability": -56.8460185516, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.17, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C1860475", 
+        "Frequency": 0.545, 
+        "Name": "Retinal vascular tortuosity"
+      }, 
+      {
+        "CUI": "C0344232", 
+        "Frequency": 0.545, 
+        "Name": "Blurred vision"
+      }, 
+      {
+        "CUI": "C4280624", 
+        "Frequency": 0.545, 
+        "Name": "Central scotoma"
+      }, 
+      {
+        "CUI": "C0234378", 
+        "Frequency": 0.17, 
+        "Name": "Postural tremor"
+      }, 
+      {
+        "CUI": "C0026848", 
+        "Frequency": 0.17, 
+        "Name": "Myopathy"
+      }, 
+      {
+        "CUI": "C1842820", 
+        "Frequency": 0.17, 
+        "Name": "Arrhythmia"
+      }, 
+      {
+        "CUI": "C0559106", 
+        "Frequency": 0.17, 
+        "Name": "Ventricular preexcitation"
+      }, 
+      {
+        "CUI": "C0154835", 
+        "Frequency": 0.545, 
+        "Name": "Retinal telangiectasia"
+      }, 
+      {
+        "CUI": "C3278981", 
+        "Frequency": 0.895, 
+        "Name": "Slow decrease in visual acuity"
+      }, 
+      {
+        "CUI": "C0029124", 
+        "Frequency": 0.545, 
+        "Name": "Optic atrophy"
+      }, 
+      {
+        "CUI": "C0007758", 
+        "Frequency": 0.17, 
+        "Name": "Ataxia"
+      }, 
+      {
+        "CUI": "C0271196", 
+        "Frequency": 0.545, 
+        "Name": "Centrocecal scotoma"
+      }, 
+      {
+        "CUI": "C2751582", 
+        "Frequency": 0.895, 
+        "Name": "Mitochondrial respiratory chain defects"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Multiple symmetric lipomatosis", 
+    "Disease_CUI": "C2931642", 
+    "Disease_Definition": "A rare subcutaneous tissue disease characterized by growth of symmetric non-encapsulated masses of adipose tissue mostly around the face and neck, with variable clinical repercussions (e.g. reduced neck mobility, compression of respiratory structures).", 
+    "Disease_Finding_Assoc_Evidence": null, 
+    "Disease_Prevalence": 5e-05, 
+    "Disease_Probability": -57.0440883026, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.545, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C0162298", 
+        "Frequency": 0.895, 
+        "Name": "Joint stiffness"
+      }, 
+      {
+        "CUI": "C0745730", 
+        "Frequency": 0.895, 
+        "Name": "Multiple lipomas"
+      }, 
+      {
+        "CUI": "C0030554", 
+        "Frequency": 0.545, 
+        "Name": "Paresthesia"
+      }, 
+      {
+        "CUI": "C4021524", 
+        "Frequency": 0.895, 
+        "Name": "Abnormal adipose tissue morphology"
+      }, 
+      {
+        "CUI": "C1866934", 
+        "Frequency": 0.545, 
+        "Name": "Reduced tendon reflexes"
+      }, 
+      {
+        "CUI": "C0019209", 
+        "Frequency": 0.545, 
+        "Name": "Hepatomegaly"
+      }, 
+      {
+        "CUI": "C0003862", 
+        "Frequency": 0.895, 
+        "Name": "Arthralgia"
+      }, 
+      {
+        "CUI": "C0021655", 
+        "Frequency": 0.545, 
+        "Name": "Insulin resistance"
+      }, 
+      {
+        "CUI": "C0575081", 
+        "Frequency": 0.545, 
+        "Name": "Gait disturbance"
+      }
+    ]
+  }, 
+  {
+    "Disease": "MEDNIK syndrome", 
+    "Disease_CUI": "C1836330", 
+    "Disease_Definition": "A rare disorder of copper metabolism characterized by intellectual deficit, enteropathy, sensorineural hearing loss, peripheral neuropathy, lamellar and erythrodermic ichthyosis, and keratodermia.", 
+    "Disease_Finding_Assoc_Evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/23423674"
+    ], 
+    "Disease_Prevalence": 1e-06, 
+    "Disease_Probability": -59.6830056104, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.895, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C0240997", 
+        "Frequency": 0.545, 
+        "Name": "Decreased circulating ceruloplasmin concentration"
+      }, 
+      {
+        "CUI": "C0020757", 
+        "Frequency": 0.895, 
+        "Name": "Ichthyosis"
+      }, 
+      {
+        "CUI": "C0268070", 
+        "Frequency": 0.545, 
+        "Name": "Decreased circulating copper concentration"
+      }, 
+      {
+        "CUI": "C0870082", 
+        "Frequency": 0.895, 
+        "Name": "Hyperkeratosis"
+      }, 
+      {
+        "CUI": "C0008372", 
+        "Frequency": 0.545, 
+        "Name": "Intrahepatic cholestasis"
+      }, 
+      {
+        "CUI": "C4020876", 
+        "Frequency": 0.895, 
+        "Name": "Intellectual disability"
+      }, 
+      {
+        "CUI": "C0021831", 
+        "Frequency": 0.895, 
+        "Name": "Abnormal intestine morphology"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Polyarteritis nodosa", 
+    "Disease_CUI": "C0031036", 
+    "Disease_Definition": "A rare, clinically heterogeneous, systemic disease characterized by necrotizing inflammatory lesions affecting medium-sized blood vessels. It most commonly affects skin, joints, peripheral nerves and the gastrointestinal tract.", 
+    "Disease_Finding_Assoc_Evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/29955757", 
+      "https://pubmed.ncbi.nlm.nih.gov/30114520", 
+      "https://pubmed.ncbi.nlm.nih.gov/30418125", 
+      "https://pubmed.ncbi.nlm.nih.gov/30952413"
+    ], 
+    "Disease_Prevalence": 2.75e-05, 
+    "Disease_Probability": -62.0103214872, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.545, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C4023528", 
+        "Frequency": 0.895, 
+        "Name": "Abnormality of skin morphology"
+      }, 
+      {
+        "CUI": "C0878544", 
+        "Frequency": 0.025, 
+        "Name": "Cardiomyopathy"
+      }, 
+      {
+        "CUI": "C0497552", 
+        "Frequency": 0.17, 
+        "Name": "Abnormality of the nervous system"
+      }, 
+      {
+        "CUI": "C4023452", 
+        "Frequency": 0.545, 
+        "Name": "Elevated circulating C-reactive protein concentration"
+      }, 
+      {
+        "CUI": "C0746926", 
+        "Frequency": 0.17, 
+        "Name": "Subcutaneous nodule"
+      }, 
+      {
+        "CUI": "C0266292", 
+        "Frequency": 0.545, 
+        "Name": "Abnormality of the kidney"
+      }, 
+      {
+        "CUI": "C0000737", 
+        "Frequency": 0.17, 
+        "Name": "Abdominal pain"
+      }, 
+      {
+        "CUI": "C1262477", 
+        "Frequency": 0.545, 
+        "Name": "Weight loss"
+      }, 
+      {
+        "CUI": "C0003862", 
+        "Frequency": 0.545, 
+        "Name": "Arthralgia"
+      }, 
+      {
+        "CUI": "C0037299", 
+        "Frequency": 0.17, 
+        "Name": "Skin ulcer"
+      }, 
+      {
+        "CUI": "C0031046", 
+        "Frequency": 0.17, 
+        "Name": "Pericarditis"
+      }, 
+      {
+        "CUI": "C4049796", 
+        "Frequency": 0.17, 
+        "Name": "Abnormality of cardiovascular system morphology"
+      }, 
+      {
+        "CUI": "C0231528", 
+        "Frequency": 0.545, 
+        "Name": "Myalgia"
+      }, 
+      {
+        "CUI": "C0015397", 
+        "Frequency": 0.025, 
+        "Name": "Abnormality of the eye"
+      }, 
+      {
+        "CUI": "C4023588", 
+        "Frequency": 0.17, 
+        "Name": "Abnormality of the gastrointestinal tract"
+      }, 
+      {
+        "CUI": "C0015967", 
+        "Frequency": 0.545, 
+        "Name": "Fever"
+      }, 
+      {
+        "CUI": "C0041834", 
+        "Frequency": 0.17, 
+        "Name": "Erythema"
+      }, 
+      {
+        "CUI": "C0497247", 
+        "Frequency": 0.17, 
+        "Name": "Hypertension"
+      }, 
+      {
+        "CUI": "C0263401", 
+        "Frequency": 0.17, 
+        "Name": "Cutis marmorata"
+      }, 
+      {
+        "CUI": "C1970883", 
+        "Frequency": 0.17, 
+        "Name": "Sensory axonal neuropathy"
+      }, 
+      {
+        "CUI": "C4021765", 
+        "Frequency": 0.17, 
+        "Name": "Morphological central nervous system abnormality"
+      }, 
+      {
+        "CUI": "C4021760", 
+        "Frequency": 0.17, 
+        "Name": "Abnormal lung morphology"
+      }, 
+      {
+        "CUI": "C0032231", 
+        "Frequency": 0.025, 
+        "Name": "Pleuritis"
+      }
+    ]
+  }, 
+  {
+    "Disease": "Glutamate-cysteine ligase deficiency", 
+    "Disease_CUI": "C1856603", 
+    "Disease_Definition": "A disorder that is principally characterized by hemolytic anemia, (usually rather mild), however, the presence of neurological symptoms has also been reported.", 
+    "Disease_Finding_Assoc_Evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/17397529"
+    ], 
+    "Disease_Prevalence": 1e-06, 
+    "Disease_Probability": -62.0316424053, 
+    "Matched_Findings": [
+      {
+        "CUI": "C0442874", 
+        "Frequency": 0.895, 
+        "Name": "Peripheral neuropathy"
+      }
+    ], 
+    "Unmatched_Findings": [
+      {
+        "CUI": "C4020843", 
+        "Frequency": 0.895, 
+        "Name": "Aminoaciduria"
+      }, 
+      {
+        "CUI": "C4020876", 
+        "Frequency": 0.17, 
+        "Name": "Intellectual disability"
+      }, 
+      {
+        "CUI": "C4020875", 
+        "Frequency": 0.17, 
+        "Name": "Global developmental delay"
+      }, 
+      {
+        "CUI": "C0033975", 
+        "Frequency": 0.17, 
+        "Name": "Psychosis"
+      }, 
+      {
+        "CUI": "C1866751", 
+        "Frequency": 0.895, 
+        "Name": "Spinocerebellar tract degeneration"
+      }, 
+      {
+        "CUI": "C0476254", 
+        "Frequency": 0.17, 
+        "Name": "Dyslexia"
+      }, 
+      {
+        "CUI": "C0206160", 
+        "Frequency": 0.17, 
+        "Name": "Reticulocytosis"
+      }, 
+      {
+        "CUI": "C0151889", 
+        "Frequency": 0.17, 
+        "Name": "Hyperreflexia"
+      }, 
+      {
+        "CUI": "C0019214", 
+        "Frequency": 0.17, 
+        "Name": "Hepatosplenomegaly"
+      }, 
+      {
+        "CUI": "C0007758", 
+        "Frequency": 0.17, 
+        "Name": "Ataxia"
+      }, 
+      {
+        "CUI": "C0026848", 
+        "Frequency": 0.895, 
+        "Name": "Myopathy"
+      }, 
+      {
+        "CUI": "C0013362", 
+        "Frequency": 0.17, 
+        "Name": "Dysarthria"
+      }, 
+      {
+        "CUI": "C0002878", 
+        "Frequency": 1.0, 
+        "Name": "Hemolytic anemia"
+      }, 
+      {
+        "CUI": "C0022346", 
+        "Frequency": 0.17, 
+        "Name": "Jaundice"
+      }
+    ]
+  }
+]

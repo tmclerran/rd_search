@@ -1,0 +1,32 @@
+{
+  "name": "CodeMirror",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": ".",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^0.19.13",
+    "@codemirror/basic-setup": "^0.19.1",
+    "axios": "^0.26.1",
+    "particles.js": "^2.0.0",
+    "split.js": "^1.6.5"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "assets/particlesjs.json",
+      "assets/searchHistory.json",
+      "assets/rare-diseases.json"
+    ]
+  }
+}

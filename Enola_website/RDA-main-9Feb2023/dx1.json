@@ -1,0 +1,373 @@
+[
+  {
+    "Disease": "Alpha-1-antitrypsin deficiency",
+    "Disease_Annual_Incidence": null,
+    "Disease_Birth_Prevalence": 0.000525,
+    "Disease_CUI": null,
+    "Disease_Definition": "A rare hereditary, metabolic disease characterized by serum levels of alpha-1-antitrypsin (AAT) that are well below the normal range. In the most severe form, the disease can clinically manifest with chronic liver disorders (cirrhosis, fibrosis), respiratory disorders (emphysema, bronchiectasis), and rarely panniculitis or vasculitis.",
+    "Disease_Finding_Assoc_Evidence": null,
+    "Disease_Lifetime_Prevalence": null,
+    "Disease_Point_Prevalence": 0.0003,
+    "Disease_Probability": 0.895,
+    "Matched_Findings": [
+      {
+        "CUI": "0001399",
+        "Frequency": 0.895,
+        "Name": "Hepatic failure"
+      }
+    ],
+    "Max_Prevalence_or_Incidence": 0.000525,
+    "Neg_Matched_Findings": [],
+    "Pos_Find_number_assoc_rare_diseases": [],
+    "Unmatched_Find_number_assoc_rare_diseases": [],
+    "Unmatched_Findings": [
+      {
+        "CUI": "0000100",
+        "Frequency": 0.17,
+        "Name": "Nephrotic syndrome"
+      },
+      {
+        "CUI": "0012115",
+        "Frequency": 0.545,
+        "Name": "Hepatitis"
+      },
+      {
+        "CUI": "0002097",
+        "Frequency": 0.895,
+        "Name": "Emphysema"
+      },
+      {
+        "CUI": "0000952",
+        "Frequency": 0.545,
+        "Name": "Jaundice"
+      },
+      {
+        "CUI": "0002240",
+        "Frequency": 0.545,
+        "Name": "Hepatomegaly"
+      }
+    ]
+  },
+  {
+    "Disease": "Lysosomal acid lipase deficiency",
+    "Disease_Annual_Incidence": null,
+    "Disease_Birth_Prevalence": 5e-6,
+    "Disease_CUI": null,
+    "Disease_Definition": "A rare, progressive metabolic liver disease due to marked to complete lysosomal acid lipase deficiency and characterized by dyslipidemia and massive lipid accumulation leading to hepatomegaly and liver dysfunction, splenomegaly, accelerated atherosclerosis.",
+    "Disease_Finding_Assoc_Evidence": [
+      "https://pubmed.ncbi.nlm.nih.gov/3565483",
+      "https://pubmed.ncbi.nlm.nih.gov/5787090",
+      "https://pubmed.ncbi.nlm.nih.gov/3740103",
+      "https://pubmed.ncbi.nlm.nih.gov/6478639",
+      "https://pubmed.ncbi.nlm.nih.gov/5642714",
+      "https://pubmed.ncbi.nlm.nih.gov/1516222",
+      "https://pubmed.ncbi.nlm.nih.gov/142699714",
+      "https://pubmed.ncbi.nlm.nih.gov/14008104"
+    ],
+    "Disease_Lifetime_Prevalence": null,
+    "Disease_Point_Prevalence": 5e-5,
+    "Disease_Probability": 0.895,
+    "Matched_Findings": [
+      {
+        "CUI": "0001399",
+        "Frequency": 0.895,
+        "Name": "Hepatic failure"
+      }
+    ],
+    "Max_Prevalence_or_Incidence": 5e-5,
+    "Neg_Matched_Findings": [],
+    "Pos_Find_number_assoc_rare_diseases": [],
+    "Unmatched_Find_number_assoc_rare_diseases": [],
+    "Unmatched_Findings": [
+      {
+        "CUI": "0000989",
+        "Frequency": 0.17,
+        "Name": "Pruritus"
+      },
+      {
+        "CUI": "0003270",
+        "Frequency": 0.895,
+        "Name": "Abdominal distention"
+      },
+      {
+        "CUI": "0001410",
+        "Frequency": 0.895,
+        "Name": "Decreased liver function"
+      },
+      {
+        "CUI": "0001414",
+        "Frequency": 0.895,
+        "Name": "Microvesicular hepatic steatosis"
+      },
+      {
+        "CUI": "0006583",
+        "Frequency": 0.895,
+        "Name": "Fatal liver failure in infancy"
+      },
+      {
+        "CUI": "0004333",
+        "Frequency": 0.17,
+        "Name": "Bone-marrow foam cells"
+      },
+      {
+        "CUI": "0004395",
+        "Frequency": 0.17,
+        "Name": "Malnutrition"
+      },
+      {
+        "CUI": "0001114",
+        "Frequency": 0.545,
+        "Name": "Xanthelasma"
+      },
+      {
+        "CUI": "0001971",
+        "Frequency": 0.17,
+        "Name": "Hypersplenism"
+      },
+      {
+        "CUI": "0001508",
+        "Frequency": 0.17,
+        "Name": "Failure to thrive"
+      },
+      {
+        "CUI": "0002361",
+        "Frequency": 0.17,
+        "Name": "Psychomotor deterioration"
+      },
+      {
+        "CUI": "0002153",
+        "Frequency": 0.17,
+        "Name": "Hyperkalemia"
+      },
+      {
+        "CUI": "0001433",
+        "Frequency": 0.895,
+        "Name": "Hepatosplenomegaly"
+      },
+      {
+        "CUI": "0002155",
+        "Frequency": 0.895,
+        "Name": "Hypertriglyceridemia"
+      },
+      {
+        "CUI": "0000127",
+        "Frequency": 0.17,
+        "Name": "Renal salt wasting"
+      },
+      {
+        "CUI": "0002017",
+        "Frequency": 0.895,
+        "Name": "Nausea and vomiting"
+      },
+      {
+        "CUI": "0001263",
+        "Frequency": 0.17,
+        "Name": "Global developmental delay"
+      },
+      {
+        "CUI": "0001922",
+        "Frequency": 0.895,
+        "Name": "Vacuolated lymphocytes"
+      },
+      {
+        "CUI": "0002092",
+        "Frequency": 0.17,
+        "Name": "Pulmonary arterial hypertension"
+      },
+      {
+        "CUI": "0004416",
+        "Frequency": 0.545,
+        "Name": "Precocious atherosclerosis"
+      },
+      {
+        "CUI": "0008207",
+        "Frequency": 0.17,
+        "Name": "Primary adrenal insufficiency"
+      },
+      {
+        "CUI": "0000991",
+        "Frequency": 0.895,
+        "Name": "Xanthomatosis"
+      },
+      {
+        "CUI": "0003124",
+        "Frequency": 0.895,
+        "Name": "Hypercholesterolemia"
+      },
+      {
+        "CUI": "0002040",
+        "Frequency": 0.545,
+        "Name": "Esophageal varix"
+      },
+      {
+        "CUI": "0001297",
+        "Frequency": 0.545,
+        "Name": "Stroke"
+      },
+      {
+        "CUI": "0002570",
+        "Frequency": 0.895,
+        "Name": "Steatorrhea"
+      },
+      {
+        "CUI": "0012605",
+        "Frequency": 0.17,
+        "Name": "Hypernatriuria"
+      },
+      {
+        "CUI": "0004929",
+        "Frequency": 0.545,
+        "Name": "obsolete Coronary atherosclerosis"
+      },
+      {
+        "CUI": "0004326",
+        "Frequency": 0.17,
+        "Name": "Cachexia"
+      },
+      {
+        "CUI": "0003155",
+        "Frequency": 0.895,
+        "Name": "Elevated circulating alkaline phosphatase concentration"
+      },
+      {
+        "CUI": "0010512",
+        "Frequency": 0.895,
+        "Name": "Adrenal calcification"
+      },
+      {
+        "CUI": "0001941",
+        "Frequency": 0.17,
+        "Name": "Acidosis"
+      },
+      {
+        "CUI": "0011106",
+        "Frequency": 0.17,
+        "Name": "Hypovolemia"
+      },
+      {
+        "CUI": "0002902",
+        "Frequency": 0.17,
+        "Name": "Hyponatremia"
+      },
+      {
+        "CUI": "0001944",
+        "Frequency": 0.17,
+        "Name": "Dehydration"
+      },
+      {
+        "CUI": "0000952",
+        "Frequency": 0.895,
+        "Name": "Jaundice"
+      },
+      {
+        "CUI": "0002014",
+        "Frequency": 0.545,
+        "Name": "Diarrhea"
+      },
+      {
+        "CUI": "0002013",
+        "Frequency": 0.17,
+        "Name": "Vomiting"
+      },
+      {
+        "CUI": "0002615",
+        "Frequency": 0.17,
+        "Name": "Hypotension"
+      },
+      {
+        "CUI": "0001541",
+        "Frequency": 0.17,
+        "Name": "Ascites"
+      },
+      {
+        "CUI": "0012598",
+        "Frequency": 0.17,
+        "Name": "Abnormal urine potassium concentration"
+      },
+      {
+        "CUI": "0001903",
+        "Frequency": 0.17,
+        "Name": "Anemia"
+      },
+      {
+        "CUI": "0002027",
+        "Frequency": 0.895,
+        "Name": "Abdominal pain"
+      },
+      {
+        "CUI": "0001824",
+        "Frequency": 0.545,
+        "Name": "Weight loss"
+      },
+      {
+        "CUI": "0002910",
+        "Frequency": 0.895,
+        "Name": "Elevated hepatic transaminase"
+      },
+      {
+        "CUI": "0001395",
+        "Frequency": 0.895,
+        "Name": "Hepatic fibrosis"
+      },
+      {
+        "CUI": "0011968",
+        "Frequency": 0.17,
+        "Name": "Feeding difficulties"
+      },
+      {
+        "CUI": "0100543",
+        "Frequency": 0.895,
+        "Name": "Cognitive impairment"
+      }
+    ]
+  },
+  {
+    "Disease": "Ornithine transcarbamylase deficiency",
+    "Disease_Annual_Incidence": null,
+    "Disease_Birth_Prevalence": 2.75e-5,
+    "Disease_CUI": null,
+    "Disease_Definition": "A rare, genetic disorder of urea cycle metabolism and ammonia detoxification characterized by either a severe, neonatal-onset disease found mainly in males, or later-onset (partial) forms of the disease. Both present with episodes of hyperammonemia that can be fatal and which can lead to neurological sequelae.",
+    "Disease_Finding_Assoc_Evidence": null,
+    "Disease_Lifetime_Prevalence": null,
+    "Disease_Point_Prevalence": 5e-5,
+    "Disease_Probability": 0.895,
+    "Matched_Findings": [
+      {
+        "CUI": "0001399",
+        "Frequency": 0.895,
+        "Name": "Hepatic failure"
+      }
+    ],
+    "Max_Prevalence_or_Incidence": 5e-5,
+    "Neg_Matched_Findings": [],
+    "Pos_Find_number_assoc_rare_diseases": [],
+    "Unmatched_Find_number_assoc_rare_diseases": [],
+    "Unmatched_Findings": [
+      {
+        "CUI": "0002021",
+        "Frequency": 0.895,
+        "Name": "Pyloric stenosis"
+      },
+      {
+        "CUI": "0001744",
+        "Frequency": 0.895,
+        "Name": "Splenomegaly"
+      },
+      {
+        "CUI": "0001987",
+        "Frequency": 0.895,
+        "Name": "Hyperammonemia"
+      },
+      {
+        "CUI": "0003355",
+        "Frequency": 0.895,
+        "Name": "Aminoaciduria"
+      },
+      {
+        "CUI": "0001943",
+        "Frequency": 0.895,
+        "Name": "Hypoglycemia"
+      }
+    ]
+  }
+]

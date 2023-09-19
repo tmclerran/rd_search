@@ -1,0 +1,1326 @@
+$colorLightBlue: rgb(3, 184, 234);
+$colorDarkBlue: #5a99e2;
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorRed: #f32e15;
+
+@mixin white-shadow($shadow-spread) {
+  //   opacity: 0.8;
+  //   background-color: inherit;
+  color: rgba($colorWhite, 1);
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px $shadow-spread rgba($colorWhite, 0.3);
+  border-color: rgba($colorWhite, 1);
+  transition: 0.3s !important;
+  cursor: pointer;
+}
+
+@mixin black-shadow($shadow-spread) {
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px $shadow-spread rgba($colorBlack, 0.3);
+  transition: 0.3s !important;
+  cursor: pointer;
+}
+
+@mixin font-grow($scale: 1.2) {
+  -webkit-transform: scale($scale);
+  transition: 0.3s;
+}
+
+@mixin button-style {
+  color: $colorLightBlue;
+  padding: 0.3em;
+  font-size: 2em;
+  border-radius: 7px;
+  background-color: black;
+  border: 1px solid rgba($colorWhite, 0);
+  @media screen and (min-width: 897px) {
+    width: 55px;
+    height: 55px;
+  }
+
+  &:hover {
+    @include white-shadow(5px);
+  }
+}
+
+.white-shadow {
+  @include white-shadow(5px);
+}
+
+.black-shadow {
+  @include black-shadow(5px);
+}
+
+.toggle-button-shadow {
+  @include white-shadow(10px);
+}
+
+@media only screen and (max-width: 896px) {
+  .h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .h2 {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  .h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .h4 {
+    font-size: 14px;
+  }
+
+  .para1 {
+    font-size: 16px;
+  }
+
+  .para2 {
+    font-size: 12px;
+  }
+
+  .para3 {
+    font-size: 11px;
+  }
+
+  .btn {
+    font-size: 0.8em;
+  }
+
+  .section-container {
+    /* padding: .3em; */
+    margin-bottom: 1em;
+  }
+
+  #search-section {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .selection-tag {
+    padding: 0.5em;
+    padding-right: 1em;
+    &.mini {
+      max-width: 50%;
+    }
+  }
+
+  .div-suggestion {
+    padding: 0.5em !important;
+  }
+
+  #suggestions-container,
+  #bookmarked-diseases-container {
+    padding: 0.5em;
+  }
+
+  .expand-contract-icon {
+    font-size: 1.1rem;
+    margin-right: 1em;
+    min-width: 1em;
+  }
+
+  //   #search-history-lines {
+  //     max-height: 200px;
+  //   }
+}
+
+@media all and (min-width: 897px) {
+  /* @include media-breakpoint-up(sm) { */
+
+  //   .container-fluid {
+  //     width: 80%;
+  //   }
+
+  //   #primary-container {
+  //     width: 90%;
+  //   }
+
+  .h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+  }
+
+  .h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .h4 {
+    font-size: 20px;
+  }
+
+  .h5 {
+    font-size: 18px;
+  }
+
+  .h6 {
+    font-size: 14px;
+  }
+
+  .para1 {
+    font-size: 24px;
+  }
+
+  .para2 {
+    font-size: 16px;
+  }
+
+  .para3 {
+    font-size: 14px;
+  }
+
+  .section-container {
+    margin-bottom: 2em;
+  }
+
+  #search-section {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  #selected-terms {
+    /* background-color: rgba(0, 0, 0, .7); */
+    z-index: 1;
+  }
+
+  .expand-contract-icon {
+    font-size: 1.5rem;
+    margin-right: 1em;
+    min-width: 1.1em;
+  }
+
+  .cm-editor {
+    padding: 0.1em 0;
+  }
+}
+
+body {
+  color: black;
+  text-align: -webkit-center;
+  background-color: black;
+  font-family: "Open Sans";
+}
+
+#beta-label {
+  color: rgba($colorWhite, 0.5);
+}
+
+#left-navbar {
+  width: 80px;
+  background-color: $colorBlack;
+  min-height: calc(100vh - 245px);
+  color: $colorLightBlue;
+  padding: 2em 0;
+  top: 130px;
+
+  i {
+    @include button-style();
+  }
+
+  button {
+    margin-bottom: 0.5em;
+  }
+  :hover {
+    width: fit-content;
+  }
+}
+
+#search-history-title i {
+  color: white;
+  background-color: $colorRed;
+  padding: 0.25em;
+  border-radius: 7px;
+  margin: 0.6em 0.2em;
+  &:hover {
+    @include white-shadow(5px);
+  }
+}
+.stick-to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding-bottom: 1em;
+  i {
+    font-size: 1.5em;
+    color: $colorLightBlue;
+  }
+  background-color: black;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Futura", "Open Sans";
+  text-align: left;
+}
+
+/* .h3 {
+    padding: 0 0.7em 0.7em 0.5em;
+} */
+
+.btn-primary {
+  min-width: 6em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: $colorRed;
+  border-color: $colorRed;
+  border: none;
+  box-shadow: 0 0 0 0.25rem rgba(241, 11, 30, 0.884);
+
+  &:focus {
+    min-width: 6em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: $colorRed;
+    border-color: $colorRed;
+    border: none;
+    box-shadow: 0 0 0 0.25rem rgba(241, 11, 30, 0.884);
+  }
+}
+
+/* .btn:hover {
+    background-color: white;
+    color: black;
+} */
+
+#primary-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: -webkit-center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+}
+
+#pane-divider {
+  width: 5px;
+  background-color: grey;
+  height: 100vh;
+}
+#results-container {
+  padding: 0 1em;
+  //   width: 100%;
+  //   max-width: 95vw;
+}
+
+#editor-container {
+  text-align: left;
+  padding: 0.5em;
+  border-radius: 7px;
+  width: 100%;
+}
+
+div.tooltip-inner {
+  border: solid 0.2rem $colorRed;
+  background-color: black;
+  color: white;
+}
+
+.tooltip.in {
+  opacity: 1 !important;
+}
+
+#mi1-toast {
+  color: white;
+  background-color: black;
+  border: 1px solid $colorRed;
+  opacity: 1 !important;
+  z-index: 99999;
+  text-align: center;
+}
+
+#div-main {
+  /* height:80%; */
+  padding: 0;
+}
+
+#primary-container.is-empty {
+  .hide-at-start {
+    display: none !important;
+  }
+
+  #suggestions-container {
+    display: none;
+  }
+}
+
+#suggestions-container,
+#bookmarked-diseases-container {
+  padding: 1em;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+#logo {
+  padding: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  /* margin-right: auto; */
+  /* margin: 30px 30px 30px; */
+}
+
+#search-history-container {
+  color: $colorLightBlue;
+  //   border-right: 7px solid $colorDarkBlue;
+  // height: calc(100vh - 122px);
+  height: fit-content;
+  overflow: auto;
+  overflow-y: clip;
+  //   border-right: 5px solid grey;
+}
+
+.rda-title {
+  text-align: center;
+  font-weight: bold;
+  //   color: rgba(0, 0, 0, 0.75);
+  color: white;
+  max-width: 90%;
+  padding: 0.1em 0em;
+  @media only screen and(    min-width: 897px) {
+    min-height: 104px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes pulse {
+  0% {
+    color: $colorDarkBlue;
+    background-image: linear-gradient(to right, $colorLightBlue, black);
+  }
+  //   50% {
+  //     color: $colorTransparentWhite;
+  //   }
+  100% {
+    color: $colorLightBlue;
+    background-image: linear-gradient(to right, black, $colorLightBlue);
+  }
+}
+
+.rda-header {
+  text-align: left;
+  color: white;
+  padding: 0.65em;
+  font-weight: bold;
+  /* margin-top: 1em; */
+  /* margin-right: 1em; */
+}
+
+.rda-dropdown-items {
+  text-align: center;
+  background-color: $colorDarkBlue;
+
+  li {
+    padding-bottom: 0.5em;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  li:hover a {
+    color: $colorDarkBlue;
+  }
+}
+
+#new-bookmarked-disease-textbox {
+  margin: 0 1em;
+  padding: 0 0.3em;
+  border: 2px solid lightgray;
+}
+
+#bookmarked-diseases-label {
+  color: $colorLightBlue;
+}
+
+.section-container {
+  //   width: 100%;
+  background-color: white;
+  border-radius: 7px;
+  text-align: left;
+}
+
+.page-info {
+  /* font-family: "Font Awesome 5 Free";
+  content: "\f05a"; */
+  padding-left: 1em;
+  color: $colorLightBlue;
+  font-size: 0.7em;
+  display: none;
+}
+
+.posneg-switch {
+  label,
+  .form-switch {
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+  label {
+    color: white;
+  }
+
+  .form-switch {
+    color: $colorDarkBlue;
+  }
+}
+
+#search-section {
+  &.positive-search #editor-container {
+    background-color: $colorDarkBlue;
+  }
+
+  &.negative-search {
+    #editor-container {
+      background-color: $colorRed;
+    }
+
+    .fa-circle-minus {
+      color: $colorRed;
+    }
+  }
+
+  &.positive-search .fa-circle-plus {
+    color: $colorDarkBlue;
+  }
+
+  .form-switch .form-check-input {
+    cursor: pointer;
+    margin-top: 0;
+    border-color: rgba($colorBlack, 0);
+  }
+}
+
+.form-check {
+  min-height: 0;
+}
+
+#search-section.negative-search .form-switch .form-check-input:checked {
+  background-color: #f32f15;
+}
+
+.div-suggestion {
+  margin-bottom: 1em;
+  border: solid 0.2rem $colorLightBlue;
+  background-color: white;
+  color: black;
+  border-radius: 7px;
+  padding: 1.5em;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.associated-evidence:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f35a";
+  padding-left: 1em;
+}
+
+.disease-info {
+  cursor: pointer;
+  &.abbreviated {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &:hover {
+    transition: 0.3s;
+    color: $colorDarkBlue;
+  }
+}
+
+.disease-name {
+  font-weight: bold;
+
+  /* padding-left: 1em; */
+}
+
+.disease-bookmark {
+  &:before {
+    color: $colorLightBlue;
+  }
+  &:hover {
+    @include font-grow();
+  }
+}
+
+/* .disease-bookmark.active:before {
+    color: gold;
+} */
+
+.search-history-bookmark {
+  &:before {
+    color: $colorLightBlue;
+    font-size: 1.5em;
+    margin-right: 1em;
+  }
+
+  &.active:before {
+    color: gold;
+  }
+}
+
+.disease-prevalence,
+.disease-probability {
+  background-color: white;
+  color: black;
+  padding: 0em 0.3em;
+  border: solid 0.1em grey;
+  border-radius: 0.3em;
+  font-size: 0.7em;
+}
+
+@media only screen and (max-width: 896px) {
+  .disease-prevalence.not-known:before {
+    content: "?";
+  }
+}
+
+@media only screen and (min-width: 897px) {
+  .disease-prevalence.not-known:before {
+    content: "Prevalence Not Known";
+  }
+}
+
+.prevalence-title {
+  &.popover {
+    max-width: 100em;
+    border-color: $colorLightBlue;
+    border-width: 0.3em;
+
+    /* font-family: "Everson Mono", "Monaco", "Courier New"; */
+  }
+
+  .popover-header {
+    color: white;
+    background-color: $colorLightBlue;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: none;
+  }
+
+  .popover-arrow {
+    color: $colorLightBlue;
+
+    /* background-color: black; */
+  }
+
+  .popover-body {
+    color: white;
+    background-color: black;
+
+    /* font-family: "Courier"; */
+    font-size: 1.2em;
+    opacity: 0.8;
+
+    .prevalence-label {
+      width: 10em;
+      text-align: left;
+    }
+
+    div {
+      display: flex;
+      align-content: space-between;
+    }
+
+    .prevalence-range {
+      min-width: 50px;
+      text-align: right;
+
+      /* color: $colorLightBlue; */
+      margin-left: auto;
+    }
+  }
+}
+
+.disease-probability {
+  display: none;
+
+  &:before {
+    content: "Pb: ";
+  }
+}
+
+/* .disease-prevalence:before {
+    content: 'Pr: ';
+} */
+
+.disease-score {
+  display: inline-block;
+  width: 7%;
+  color: $colorRed;
+  -moz-text-align-last: right;
+  text-align-last: right;
+}
+
+.disease-evidence {
+  padding: 0.5em;
+  background-color: lightblue;
+}
+
+.publication-url {
+  padding: 0 1em;
+}
+
+.search-editor {
+  background-color: white;
+  width: 100%;
+  padding: 0.2em 0;
+}
+
+.cm-editor:not(.cm-focused) .cm-activeLine:before {
+  /* content: "e.g. Thrombocytopenia, Occipital Encephalocele, Hypotonia"; */
+  //   content: "Enter disease or finding, e.g. Zellweger syndrome or liver failure";
+  content: "Enter disease or finding";
+  font-style: italic;
+  color: grey;
+}
+
+/* .cm-completionIcon:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid grey;
+    padding: 3px;
+    color: white;
+    background-color: grey;
+    font-size: 75%;
+}
+
+.cm-completionIcon-finding:before {
+    content: "\46";
+} */
+
+.cm-completionLabel {
+  padding-left: 15px;
+}
+
+/* #div-selected-terms {
+    background-color: white;
+    border: 10px solid $colorDarkBlue;
+    margin-top: 1em;
+    border-radius: 7px;
+} */
+
+.selection-tag {
+  border: 1px solid $colorDarkBlue;
+  background-color: white;
+  color: black;
+  border-radius: 7px;
+  height: 3.5em;
+  padding: 1em;
+  max-width: 100%;
+  margin: 0.5em 0;
+
+  /* margin: 1em; */
+
+  &.mini {
+    .findings-header {
+      align-self: center;
+      overflow: auto;
+    }
+    .selection-tag-text {
+      margin-right: 0;
+    }
+  }
+
+  .finding-description,
+  .finding-source {
+    display: none;
+  }
+  .findings-header {
+    overflow: hidden;
+    margin-right: auto;
+    @media only screen and (min-width: 897px) {
+      align-self: center;
+    }
+    padding: 0.3em 0;
+    width: 100%;
+  }
+  .positive-finding,
+  .negative-finding {
+    cursor: pointer;
+  }
+
+  &.selectable .posneg-finding {
+    color: white;
+    display: block;
+  }
+
+  &.selected .selection-tag-posneg {
+    display: none !important;
+  }
+
+  &.selectable:not(.negative-finding) .posneg-finding {
+    color: $colorDarkBlue;
+  }
+  &.expanded {
+    height: auto;
+    @include black-shadow(5px);
+    // .selection-tag-posneg {
+    //   display: flex;
+    // }
+  }
+  .finding-description {
+    font-style: italic;
+  }
+}
+
+.selection-tag-text {
+  padding-right: 1em;
+}
+
+.selection-tag {
+  &:not(.selected) .selection-tag-text:hover,
+  &.removeable .selection-tag-text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.div-suggestion .posneg-finding {
+  display: none;
+}
+
+.selection-tag {
+  &.selected {
+    color: white;
+    background-color: $colorDarkBlue;
+  }
+
+  &.mini .selection-tag-frequency {
+    display: none;
+  }
+}
+
+/* hide frequency for selected terms */
+
+.selection-tag-frequency {
+  font-size: 0.8em;
+  color: white;
+  margin-left: 1em;
+  border-radius: 0.5em;
+  padding: 0.1em 0.5em;
+}
+
+/* .selection-tag .posneg-finding {
+    padding-right: 1em;
+    cursor: pointer;
+} */
+
+.selection-tag.negative-finding {
+  background-color: $colorRed;
+  color: white;
+  border-color: $colorRed;
+}
+
+/* .selection-tag .posneg-finding:after {
+    font-family: "Font Awesome 6 Free";
+    cursor: pointer;
+}
+
+.selection-tag.positive-finding .posneg-finding:after {
+    content: "\f164";
+}
+
+.selection-tag.negative-finding .posneg-finding:after {
+    content: "\f165";
+} */
+
+.selection-tag-posneg {
+  color: $colorDarkBlue;
+  font-size: 2em;
+  text-align: center;
+  //   display: flex;
+  padding-left: 0.5em;
+  margin-right: 0.5em;
+
+  .positive-finding {
+    color: $colorDarkBlue;
+  }
+
+  .negative-finding {
+    color: $colorRed;
+  }
+
+  .positive-finding:hover,
+  .negative-finding:hover {
+    opacity: 0.6;
+  }
+}
+
+.selection-tag-hover-area {
+  display: contents;
+}
+
+.selection-tag .posneg-finding:hover:after {
+  color: lightgray;
+}
+
+#selected-terms {
+  .remove-tag {
+    cursor: pointer;
+
+    &:after {
+      font-family: "Font Awesome 6 Free";
+      content: "X";
+      font-size: 10px;
+      margin-left: 2em;
+      color: white;
+      cursor: pointer;
+    }
+
+    &:hover:after {
+      color: lightgray;
+    }
+  }
+
+  .selection-tag {
+    height: 2.5em;
+    padding-right: 0;
+  }
+
+  .selection-tag:not(.selected) {
+    display: none !important;
+  }
+}
+
+/* x mark */
+
+.expand-contract {
+  max-width: 85%;
+}
+
+.expand-contract-icon {
+  color: $colorLightBlue;
+  cursor: pointer;
+  text-align: center;
+
+  &:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f078";
+    font-weight: bold;
+  }
+}
+
+.expand-contract-icon:hover:before {
+  content: "\f13a";
+  margin-right: -3px;
+}
+
+.contracted {
+  .expand-contract-icon:hover:before {
+    content: "\f138";
+    margin-right: -8px;
+  }
+
+  .expand-contract-icon:before {
+    content: "\f054";
+  }
+}
+
+.div-suggestion.contracted .disease-addinfo {
+  display: none !important;
+}
+
+/* .div-suggestion.contracted .disease-addinfo,
+#rda-header-diseases.contracted+#suggestions-container .disease-addinfo {
+    display: none !important;
+}
+
+#rda-header-bookmarked-diseases.contracted+#bookmarked-diseases-container .disease-addinfo {
+    display: none !important;
+} */
+
+// #rda-header-bookmarked-diseases {
+//   top: 205px;
+// }
+
+// #rda-header-diseases {
+//   top: 255px;
+// }
+
+.btn-more-findings {
+  cursor: pointer;
+  padding: 0.4em;
+  border-radius: 7px;
+  border: 2px solid lightgrey;
+  &:hover {
+    // color: $colorLightBlue;
+    @include black-shadow(5px);
+  }
+}
+
+.ellipsis {
+  align-self: self-end;
+  font-size: 2em;
+  color: $colorDarkBlue;
+  &:after {
+    content: "...";
+  }
+  &:hover {
+    cursor: pointer;
+    @include font-grow();
+  }
+}
+// .btn-more-findings {
+//   text-decoration: underline;
+//   margin-bottom: 1em;
+//   cursor: pointer;
+
+// }
+
+// .disease-findings .selection-tag:nth-child(1n + 9) {
+//   display: none !important;
+// }
+
+.hide-findings .selection-tag:not(.top-eight) {
+  display: none !important;
+}
+
+// .show-findings .btn-more-findings:before {
+//   content: "Show Fewer Findings ...";
+// }
+
+.gradient-bar {
+  width: 4.5em;
+  height: 1em;
+  background-image: linear-gradient(to right, $colorLightBlue, black);
+  border: solid 1px black;
+}
+
+.selection-tag {
+  &.selected .frequency-gradient {
+    /* border: solid 1px white; */
+    border-color: white;
+  }
+
+  &.mini {
+    .frequency-gradient,
+    .empty-box {
+      display: none;
+    }
+  }
+}
+
+.empty-box {
+  background-color: white;
+  height: 1em;
+  border: solid black;
+  border-width: 1px 1px 1px 0px;
+}
+
+.selection-tag.selected .empty-box {
+  /* border: solid 1px white; */
+  border-color: white;
+}
+
+#editor-container .buttons {
+  background-color: white;
+  font-size: 1.3em;
+  color: $colorDarkBlue;
+  padding: 0.2em 0.5em;
+
+  span {
+    margin-left: 0.5em;
+    padding: 0 0.3em;
+
+    &:hover {
+      color: $colorLightBlue;
+      cursor: pointer;
+    }
+  }
+}
+
+.close-button:before {
+  cursor: pointer;
+  font-family: "Font Awesome 6 Free";
+  content: "\f057";
+
+  /* font-size: 1.4em; */
+}
+
+// #clear-search {
+//   padding: 1em 0em 0.5em 0.5em;
+
+//   i {
+//     font-size: 1.8em;
+//   }
+// }
+// //hide search history lines that haven't been selected
+// #rda-header-search-history.show-favourites-only
+//   .search-history-line-template
+//   :not(span.save-icon.fas) {
+//   display: none;
+// }
+
+.search-history-line-group {
+  &:nth-child(odd) {
+    background-color: lightgray;
+  }
+  &:nth-child(even) {
+    background-color: white;
+  }
+}
+
+#search-history {
+  border: 0.2rem solid $colorLightBlue;
+  border-radius: 7px;
+  margin: 0.5em;
+
+  &.contracted {
+    display: none;
+  }
+
+  .header-label {
+    color: $colorDarkBlue;
+    text-align: left;
+    width: 100%;
+    padding: 0.5em;
+  }
+  .search-history-line-findings {
+    padding: 0.5em 0;
+    width: 100%;
+  }
+
+  .date-header {
+    font-weight: bold;
+
+    /* margin-left: .5em; */
+    text-align: left;
+    color: white;
+    padding: 0.25em;
+    // margin-bottom: 0.3em;
+    background-color: $colorLightBlue;
+  }
+
+  .search-time {
+    font-weight: bold;
+    margin: 0 0.5em;
+    white-space: nowrap;
+
+    /* background-color: $colorDarkBlue; */
+    padding: 0.5em;
+    border-radius: 7px;
+    min-width: 75px;
+  }
+}
+
+#search-history-navbar {
+  //   vertical-align: text-top;
+  padding: 0 1em;
+}
+
+#search-history-filters {
+  margin-bottom: 1em;
+  background-color: white;
+  color: $colorDarkBlue;
+}
+
+#rda-header-search-history i,
+#search-section-header i,
+#btnClearAll i {
+  //   color: $colorLightBlue;
+  //   font-size: 2em;
+  @include button-style();
+}
+#rda-header-search-history {
+  .btn {
+    padding: 0;
+    border: none;
+  }
+}
+#close-search-history {
+  font-size: 1.3em;
+}
+
+.search-history-line-findings span {
+  padding: 0.15em 0.5em;
+  margin: 0.2em 0.25em 0.2em 0.25em;
+}
+
+.search-history-line-group {
+  color: $colorLightBlue;
+}
+
+// .search-history-line-header span {
+//   &.save-icon,
+//   &.share-icon {
+//     font-size: 1rem;
+//     padding: 0.25em 0.5em;
+//     cursor: pointer;
+//     margin: 0 0.5em;
+//   }
+
+//   &.save-icon:hover {
+//     color: $colorDarkBlue;
+//   }
+// }
+
+.search-history-line-header i {
+  font-size: 1.5rem;
+  padding: 0.25em 0em;
+  margin: 0 0.5em;
+  cursor: pointer;
+
+  &:hover {
+    @include font-grow();
+  }
+}
+#search-history-lines {
+  //   max-height: 50vh;
+  //   overflow-y: scroll;
+  background-color: white;
+  .search-history-line-findings {
+    &:hover {
+      //   background-color: lightgrey;
+      cursor: pointer;
+      .tag {
+        // box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+        // transition: 0.3s;
+        @include black-shadow(5px);
+      }
+    }
+  }
+
+  .tag {
+    border: 0.1em solid;
+    border-radius: 7px;
+    background-color: white;
+    padding: 0.15em 0.5em;
+    margin: 0.2em 0.5em;
+
+    &.negative-search {
+      border-color: $colorRed;
+      color: $colorRed;
+    }
+  }
+}
+
+// #suggestions-container .selection-tag-hover-area:hover {
+//   @include black-shadow(5px);
+// }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: red;
+  color: white;
+  text-align: center;
+  text-orientation: mixed;
+  font-size: 37px;
+  font-family: oswald-extralight, oswald, sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  background-color: black;
+  border: 3px solid $colorLightBlue;
+  padding: 0.5em 0.2em;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: white;
+  }
+
+  &.screen-left {
+    left: 0;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    color: $colorLightBlue;
+    border-color: $colorLightBlue;
+  }
+
+  &.screen-right {
+    right: 0;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    color: $colorRed;
+    border-color: $colorRed;
+  }
+}
+
+#particles-js {
+  canvas {
+    display: block;
+    vertical-align: bottom;
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity 0.8s ease, transform 1.4s ease;
+  }
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.split,
+.gutter.gutter-horizontal {
+  float: left;
+}
+
+.gutter.gutter-horizontal {
+  cursor: ew-resize;
+  background-color: gray;
+  padding: 0 0.25em;
+  background-image: url("assets/drag-horizontal.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  flex-shrink: 0;
+  height: auto;
+  &:hover {
+    background-color: $colorWhite;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
+
+// .slide-out {
+//   animation: slide-out 0.5s forwards;
+//   -webkit-animation: slide-out 0.5s forwards;
+// }
+
+// @keyframes slide-out {
+//   0% {
+//     transform: translateX(0%);
+//   }
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// }
+
+// .split {
+//   display: flex;
+//   flex-direction: row;
+// }

@@ -1,0 +1,502 @@
+[
+  {
+    "Clinical_Finding_CUI": "9a51b96c1",
+    "Clinical_Finding": "Collins",
+    "frequency": 0.308412904306929
+  },
+  {
+    "Clinical_Finding_CUI": "9899502f6",
+    "Clinical_Finding": "Rios",
+    "frequency": 0.2763257004716704
+  },
+  {
+    "Clinical_Finding_CUI": "71aef6289",
+    "Clinical_Finding": "Harmon",
+    "frequency": 0.2226413789770596
+  },
+  {
+    "Clinical_Finding_CUI": "01a3a4227",
+    "Clinical_Finding": "Wells",
+    "frequency": 0.9366924740804234
+  },
+  {
+    "Clinical_Finding_CUI": "23f18553a",
+    "Clinical_Finding": "Hinton",
+    "frequency": 0.3280951129421714
+  },
+  {
+    "Clinical_Finding_CUI": "6cd23e644",
+    "Clinical_Finding": "Browning",
+    "frequency": 0.3322476067527569
+  },
+  {
+    "Clinical_Finding_CUI": "08405e62a",
+    "Clinical_Finding": "Hartman",
+    "frequency": 0.1453216230386316
+  },
+  {
+    "Clinical_Finding_CUI": "393be0ded",
+    "Clinical_Finding": "Moore",
+    "frequency": 0.40849800706077777
+  },
+  {
+    "Clinical_Finding_CUI": "2957699c1",
+    "Clinical_Finding": "Hardy",
+    "frequency": 0.007484281063060649
+  },
+  {
+    "Clinical_Finding_CUI": "2ad7e9ab2",
+    "Clinical_Finding": "Nash",
+    "frequency": 0.9051332079099288
+  },
+  {
+    "Clinical_Finding_CUI": "1a4c3f485",
+    "Clinical_Finding": "Thompson",
+    "frequency": 0.6279597539595001
+  },
+  {
+    "Clinical_Finding_CUI": "df56b9edb",
+    "Clinical_Finding": "Fleming",
+    "frequency": 0.9432725056828521
+  },
+  {
+    "Clinical_Finding_CUI": "b1ced6052",
+    "Clinical_Finding": "Santos",
+    "frequency": 0.7480494607550834
+  },
+  {
+    "Clinical_Finding_CUI": "d55388b53",
+    "Clinical_Finding": "Joyce",
+    "frequency": 0.8939766233217064
+  },
+  {
+    "Clinical_Finding_CUI": "d1ac7bedc",
+    "Clinical_Finding": "Gomez",
+    "frequency": 0.5144560211326983
+  },
+  {
+    "Clinical_Finding_CUI": "e8c1a4a68",
+    "Clinical_Finding": "Blackwell",
+    "frequency": 0.33319500678939695
+  },
+  {
+    "Clinical_Finding_CUI": "cec8787be",
+    "Clinical_Finding": "Hendrix",
+    "frequency": 0.814732552863638
+  },
+  {
+    "Clinical_Finding_CUI": "e34eabb44",
+    "Clinical_Finding": "Riley",
+    "frequency": 0.9818467495261323
+  },
+  {
+    "Clinical_Finding_CUI": "2c01aa610",
+    "Clinical_Finding": "Galloway",
+    "frequency": 0.0600144956491524
+  },
+  {
+    "Clinical_Finding_CUI": "1f06f56b4",
+    "Clinical_Finding": "Mclean",
+    "frequency": 0.6162232801054768
+  },
+  {
+    "Clinical_Finding_CUI": "47a3ef857",
+    "Clinical_Finding": "Sawyer",
+    "frequency": 0.6125418147196289
+  },
+  {
+    "Clinical_Finding_CUI": "2e5aec6be",
+    "Clinical_Finding": "Dillard",
+    "frequency": 0.1372430475593145
+  },
+  {
+    "Clinical_Finding_CUI": "17226b055",
+    "Clinical_Finding": "Miranda",
+    "frequency": 0.629939812348743
+  },
+  {
+    "Clinical_Finding_CUI": "cabefef39",
+    "Clinical_Finding": "Dorsey",
+    "frequency": 0.6641620775774988
+  },
+  {
+    "Clinical_Finding_CUI": "5648e36dd",
+    "Clinical_Finding": "Mercer",
+    "frequency": 0.9240245945642007
+  },
+  {
+    "Clinical_Finding_CUI": "424cb3a5d",
+    "Clinical_Finding": "James",
+    "frequency": 0.42516382776128614
+  },
+  {
+    "Clinical_Finding_CUI": "438884576",
+    "Clinical_Finding": "Chambers",
+    "frequency": 0.11094360123497449
+  },
+  {
+    "Clinical_Finding_CUI": "9cf8542ee",
+    "Clinical_Finding": "Townsend",
+    "frequency": 0.4925041137534756
+  },
+  {
+    "Clinical_Finding_CUI": "fbe7c6890",
+    "Clinical_Finding": "Higgins",
+    "frequency": 0.018977684542159867
+  },
+  {
+    "Clinical_Finding_CUI": "4856acc0d",
+    "Clinical_Finding": "Larson",
+    "frequency": 0.052562179983403734
+  },
+  {
+    "Clinical_Finding_CUI": "88f95cace",
+    "Clinical_Finding": "Franco",
+    "frequency": 0.12393476392652358
+  },
+  {
+    "Clinical_Finding_CUI": "03c532e76",
+    "Clinical_Finding": "Lindsey",
+    "frequency": 0.10289242547745103
+  },
+  {
+    "Clinical_Finding_CUI": "3f00d37ee",
+    "Clinical_Finding": "Fry",
+    "frequency": 0.42298824441272864
+  },
+  {
+    "Clinical_Finding_CUI": "b36235d6e",
+    "Clinical_Finding": "Bennett",
+    "frequency": 0.849888269976145
+  },
+  {
+    "Clinical_Finding_CUI": "20da22041",
+    "Clinical_Finding": "Russell",
+    "frequency": 0.04236204720075132
+  },
+  {
+    "Clinical_Finding_CUI": "5d1fc41fa",
+    "Clinical_Finding": "Pittman",
+    "frequency": 0.1624031047771406
+  },
+  {
+    "Clinical_Finding_CUI": "64871a365",
+    "Clinical_Finding": "Bowman",
+    "frequency": 0.3290634407926698
+  },
+  {
+    "Clinical_Finding_CUI": "3a65c676a",
+    "Clinical_Finding": "Bean",
+    "frequency": 0.3274679787206525
+  },
+  {
+    "Clinical_Finding_CUI": "86117180a",
+    "Clinical_Finding": "Watson",
+    "frequency": 0.942369438421645
+  },
+  {
+    "Clinical_Finding_CUI": "ff138eb5c",
+    "Clinical_Finding": "Shields",
+    "frequency": 0.6628755998944458
+  },
+  {
+    "Clinical_Finding_CUI": "06538a552",
+    "Clinical_Finding": "Durham",
+    "frequency": 0.559027532801349
+  },
+  {
+    "Clinical_Finding_CUI": "dfff7b651",
+    "Clinical_Finding": "Garcia",
+    "frequency": 0.5579480631320255
+  },
+  {
+    "Clinical_Finding_CUI": "211c53197",
+    "Clinical_Finding": "Myers",
+    "frequency": 0.4192429099895447
+  },
+  {
+    "Clinical_Finding_CUI": "1b62654ee",
+    "Clinical_Finding": "Shaw",
+    "frequency": 0.837942961799474
+  },
+  {
+    "Clinical_Finding_CUI": "3b5302130",
+    "Clinical_Finding": "Gilliam",
+    "frequency": 0.7399494022065891
+  },
+  {
+    "Clinical_Finding_CUI": "c9ddd630e",
+    "Clinical_Finding": "Bowen",
+    "frequency": 0.1861102832909325
+  },
+  {
+    "Clinical_Finding_CUI": "5ef0f1897",
+    "Clinical_Finding": "Olson",
+    "frequency": 0.9112913016189601
+  },
+  {
+    "Clinical_Finding_CUI": "4c5cd8388",
+    "Clinical_Finding": "Ball",
+    "frequency": 0.7690955147201382
+  },
+  {
+    "Clinical_Finding_CUI": "902f38e88",
+    "Clinical_Finding": "Leonard",
+    "frequency": 0.08993741236001629
+  },
+  {
+    "Clinical_Finding_CUI": "4693839d4",
+    "Clinical_Finding": "Chandler",
+    "frequency": 0.9276967775365657
+  },
+  {
+    "Clinical_Finding_CUI": "ca30a9f9b",
+    "Clinical_Finding": "Norris",
+    "frequency": 0.5925038169922772
+  },
+  {
+    "Clinical_Finding_CUI": "eea5316d6",
+    "Clinical_Finding": "Keller",
+    "frequency": 0.06954010496963559
+  },
+  {
+    "Clinical_Finding_CUI": "f3b0b174d",
+    "Clinical_Finding": "Mayer",
+    "frequency": 0.28438130976708487
+  },
+  {
+    "Clinical_Finding_CUI": "da87bc21d",
+    "Clinical_Finding": "Deleon",
+    "frequency": 0.22797572756191142
+  },
+  {
+    "Clinical_Finding_CUI": "6b22d181c",
+    "Clinical_Finding": "Goodman",
+    "frequency": 0.3923263018653951
+  },
+  {
+    "Clinical_Finding_CUI": "b881ffa75",
+    "Clinical_Finding": "Rivera",
+    "frequency": 0.839588950969848
+  },
+  {
+    "Clinical_Finding_CUI": "cb966aeff",
+    "Clinical_Finding": "Pacheco",
+    "frequency": 0.2771877119239712
+  },
+  {
+    "Clinical_Finding_CUI": "07a3232b6",
+    "Clinical_Finding": "Hays",
+    "frequency": 0.5230718767964158
+  },
+  {
+    "Clinical_Finding_CUI": "621598913",
+    "Clinical_Finding": "Blankenship",
+    "frequency": 0.09382619544401982
+  },
+  {
+    "Clinical_Finding_CUI": "9871c735c",
+    "Clinical_Finding": "Nguyen",
+    "frequency": 0.6524812804856475
+  },
+  {
+    "Clinical_Finding_CUI": "ee272c1ee",
+    "Clinical_Finding": "Moses",
+    "frequency": 0.5478016080880868
+  },
+  {
+    "Clinical_Finding_CUI": "c65917e3e",
+    "Clinical_Finding": "Wagner",
+    "frequency": 0.9057191648765537
+  },
+  {
+    "Clinical_Finding_CUI": "1b416f662",
+    "Clinical_Finding": "Clements",
+    "frequency": 0.2728796702750813
+  },
+  {
+    "Clinical_Finding_CUI": "dd888dd2a",
+    "Clinical_Finding": "Wright",
+    "frequency": 0.35874308345518724
+  },
+  {
+    "Clinical_Finding_CUI": "38cf737f3",
+    "Clinical_Finding": "Dawson",
+    "frequency": 0.09122669555701646
+  },
+  {
+    "Clinical_Finding_CUI": "0133ac990",
+    "Clinical_Finding": "Atkins",
+    "frequency": 0.04309598114899593
+  },
+  {
+    "Clinical_Finding_CUI": "867a210b7",
+    "Clinical_Finding": "Ortiz",
+    "frequency": 0.9951376806780872
+  },
+  {
+    "Clinical_Finding_CUI": "cdb98c168",
+    "Clinical_Finding": "Hancock",
+    "frequency": 0.6004070479147077
+  },
+  {
+    "Clinical_Finding_CUI": "13774f326",
+    "Clinical_Finding": "Orr",
+    "frequency": 0.7562295399718744
+  },
+  {
+    "Clinical_Finding_CUI": "c44535dba",
+    "Clinical_Finding": "Ford",
+    "frequency": 0.33224801201842724
+  },
+  {
+    "Clinical_Finding_CUI": "d88f1d6a1",
+    "Clinical_Finding": "Wolfe",
+    "frequency": 0.620393756188039
+  },
+  {
+    "Clinical_Finding_CUI": "9383b0383",
+    "Clinical_Finding": "Conley",
+    "frequency": 0.48454246084719177
+  },
+  {
+    "Clinical_Finding_CUI": "b125e56c8",
+    "Clinical_Finding": "Buck",
+    "frequency": 0.41759841782598883
+  },
+  {
+    "Clinical_Finding_CUI": "1b94c239c",
+    "Clinical_Finding": "Bray",
+    "frequency": 0.4029404562089858
+  },
+  {
+    "Clinical_Finding_CUI": "aefbddc2d",
+    "Clinical_Finding": "Christian",
+    "frequency": 0.95591092258332
+  },
+  {
+    "Clinical_Finding_CUI": "79f8c8d1d",
+    "Clinical_Finding": "Burks",
+    "frequency": 0.4285015033859856
+  },
+  {
+    "Clinical_Finding_CUI": "64bfe92c5",
+    "Clinical_Finding": "Bender",
+    "frequency": 0.6329973029032296
+  },
+  {
+    "Clinical_Finding_CUI": "c544ee9c7",
+    "Clinical_Finding": "Rivers",
+    "frequency": 0.3557245850060351
+  },
+  {
+    "Clinical_Finding_CUI": "a29d03917",
+    "Clinical_Finding": "Cummings",
+    "frequency": 0.6649694205848731
+  },
+  {
+    "Clinical_Finding_CUI": "63ce5a56d",
+    "Clinical_Finding": "Tyson",
+    "frequency": 0.8715004391682037
+  },
+  {
+    "Clinical_Finding_CUI": "be8d2c8f9",
+    "Clinical_Finding": "Shaffer",
+    "frequency": 0.12840853180034562
+  },
+  {
+    "Clinical_Finding_CUI": "e2427b706",
+    "Clinical_Finding": "Hodges",
+    "frequency": 0.9872895786955949
+  },
+  {
+    "Clinical_Finding_CUI": "c49112169",
+    "Clinical_Finding": "Albert",
+    "frequency": 0.9898092591423686
+  },
+  {
+    "Clinical_Finding_CUI": "bb937e7f5",
+    "Clinical_Finding": "Carver",
+    "frequency": 0.28775151390901166
+  },
+  {
+    "Clinical_Finding_CUI": "27b8320eb",
+    "Clinical_Finding": "Lindsay",
+    "frequency": 0.5326980584742091
+  },
+  {
+    "Clinical_Finding_CUI": "878d53ba2",
+    "Clinical_Finding": "Schultz",
+    "frequency": 0.7063450438451966
+  },
+  {
+    "Clinical_Finding_CUI": "1db2f9003",
+    "Clinical_Finding": "Sloan",
+    "frequency": 0.15046441870961513
+  },
+  {
+    "Clinical_Finding_CUI": "1ae09ce27",
+    "Clinical_Finding": "Levy",
+    "frequency": 0.42760801515941127
+  },
+  {
+    "Clinical_Finding_CUI": "f55ea2aef",
+    "Clinical_Finding": "Velazquez",
+    "frequency": 0.3931316254984589
+  },
+  {
+    "Clinical_Finding_CUI": "78c82e4d3",
+    "Clinical_Finding": "Nieves",
+    "frequency": 0.7130329903998731
+  },
+  {
+    "Clinical_Finding_CUI": "9f6bd1469",
+    "Clinical_Finding": "Moody",
+    "frequency": 0.34474146154523266
+  },
+  {
+    "Clinical_Finding_CUI": "98de1ba73",
+    "Clinical_Finding": "Hoover",
+    "frequency": 0.9840574671038316
+  },
+  {
+    "Clinical_Finding_CUI": "b874cdb1c",
+    "Clinical_Finding": "Stewart",
+    "frequency": 0.6572277578550105
+  },
+  {
+    "Clinical_Finding_CUI": "24d090108",
+    "Clinical_Finding": "Carter",
+    "frequency": 0.48131457076081485
+  },
+  {
+    "Clinical_Finding_CUI": "2368f04c4",
+    "Clinical_Finding": "Frederick",
+    "frequency": 0.6203734012630631
+  },
+  {
+    "Clinical_Finding_CUI": "9e67613be",
+    "Clinical_Finding": "William",
+    "frequency": 0.2690752900870008
+  },
+  {
+    "Clinical_Finding_CUI": "a9513770e",
+    "Clinical_Finding": "Dickson",
+    "frequency": 0.9329564842813147
+  },
+  {
+    "Clinical_Finding_CUI": "8d5b0134b",
+    "Clinical_Finding": "Mcmillan",
+    "frequency": 0.5425022703315283
+  },
+  {
+    "Clinical_Finding_CUI": "18b332698",
+    "Clinical_Finding": "Mayo",
+    "frequency": 0.8779771030286523
+  },
+  {
+    "Clinical_Finding_CUI": "a6fee6ded",
+    "Clinical_Finding": "Jensen",
+    "frequency": 0.7779588481012376
+  }
+]

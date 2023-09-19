@@ -1,0 +1,303 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="codemirror.ts" type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="custom.css" />
+    <title>
+        MI-1 Rare Disease Application
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+</head>
+
+<body>
+    <!-- * * * templates * * *  -->
+    <div id="templates" class="d-none">
+
+        <!-- template for disease findings tag -->
+        <div id="selection-tag-template" class="selection-tag findings-tag para3 d-flex col-auto  me-2">
+            <div class="d-flex align-items-center findings-header">
+                <span class="selection-tag-hover-area">
+                    <span class="selection-tag-text text-truncate"></span>
+                    <span class="frequency-gradient gradient-bar" title="Frequency"></span>
+                    <span class="frequency-gradient empty-box" style="width:0px; margin-left:0px;"
+                        title="Frequency"></span>
+                    <span class="selection-tag-cui d-none"></span>
+                    <span class="selection-tag-frequency d-none" title="Frequency"
+                        style="background-color: rgba(0,0,0,1)"></span>
+                    <span class="selection-tag-posneg d-none gap-1 ms-auto">
+                        <i class="positive-finding fas fa-circle-plus"
+                            title="Click to Add to Search Terms as Positive Finding"></i>
+                        <i class="negative-finding fas fa-circle-minus"
+                            title="Click to add to Search Terms as Negative Finding"></i>
+                    </span>
+                </span>
+            </div>
+            <div class="finding-description d-none"></div>
+            <div class="finding-source justify-content-center d-none"></div>
+        </div>
+        <!-- template for disease suggestion -->
+        <div id="suggestion-template" class="div-suggestion hide-findings">
+            <div class="mb-auto">
+                <div class="suggestion-header d-flex flex-wrap align-items-center justify-content-between h3">
+                    <span class="expand-contract clickable py-1 pe-3" title="Expand/Contract Disease">
+                        <span class="expand-contract-icon"></span>
+                        <span class="me-auto">
+                            <span class="disease-name">Disease Name</span>
+                        </span>
+                    </span>
+                    <span class="d-flex justify-content-end flex-fill text-nowrap">
+                        <span class="disease-prevalence" data-bs-toggle="popover" data-bs-html="true"
+                            data-bs-placement="auto" data-bs-trigger="hover" title="Prevalence"></span>
+                        <span class="disease-probability" title="Probability"></span>
+                        <!-- <span class="associated-evidence ms-2 me-2" title="Associated Evidence" data-bs-toggle="tooltip"
+                                            data-bs-placement="bottom"></span> -->
+                        <!-- <i class="disease-probability fas fa-circle" aria-hidden="true" data-bs-toggle="tooltip"></i> -->
+                        <i class="connected-papers fas fa-circle-nodes d-none" aria-hidden="true"
+                            title="Search Connected Papers"></i>
+                        <i class="far fa-bookmark disease-bookmark clickable ms-2"
+                            title="Add to Bookmarked Diseases"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="disease-addinfo mt-3">
+                <div class="disease-info abbreviated para2 mb-3"></div>
+                <div class="disease-evidence mb-3 d-none"></div>
+                <div class="more-findings d-flex justify-content-start align-items-center mb-3">
+                    <label class="findings-label h4 me-3 mb-0">Findings</label>
+                    <label class="btn-more-findings para3"></label>
+                </div>
+                <div class="disease-findings d-flex flex-wrap"></div>
+            </div>
+        </div>
+        <!-- template for posneg popover -->
+        <div id="posneg-popover-template">
+            <span class='posneg-popover'>
+                <i class='positive-finding fas fa-circle-plus mb-1'
+                    title="Click to add to Search as Positive Finding"></i>
+                <i class='negative-finding fas fa-circle-minus' title="Click to add to Search as Negative Finding"></i>
+            </span>
+        </div>
+
+        <!-- info template -->
+        <div id="page-info-template">
+            <span>The Mi1 Rare Disease Application uses Positive and Negative findings to output a list of the most
+                relevant Diseases.
+                For example, if you have known symptoms of <em>Elastomyofibrosis</em> and <em>Respiratory
+                    Insufficiency</em> but
+                definitely no <em>Premature Birth</em> finding,
+                you should add Elastomyofibrosis and Respiratory Insufficiency as Positive Findings (in blue) and
+                Premature Birth as a Negative Finding (in red) </span>
+        </div>
+
+        <!-- search history template -->
+        <div id="search-history-line-template" class="search-history-line-template para3">
+            <div class="date-header"></div>
+            <div class="search-history-line-group d-flex">
+                <div class="search-history-line-header d-flex align-items-center">
+                    <span class="search-time"></span>
+                    <i class="save-icon far fa-star me-2"></i>
+                    <i class="share-icon fas fa-share-nodes me-3"></span>
+                </div>
+                <div class="search-history-line-findings d-flex flex-wrap align-items-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * * * end of templates * * *  -->
+
+    <!-- modal popup-->
+    <div class="modal fade container-fluid" id="twoButtonDialogue" tabindex="-1" role="dialog" data-bs-backdrop="static"
+        aria-labelledby="twoButtonDialogueLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label class="modal-title" id="twoButtonDialogueLabel">Modal title</label>
+                </div>
+                <!-- message -->
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btn-submit">OK</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" id="btn-return">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header>
+        <div class="d-flex justify-content-between align-items-center">
+            <div id="logo">
+                <a href="https://www.mi1.ai/">
+                    <img src="./assets/Original on Transparent.png" height="60px"
+                        alt="Medical Intelligence One home page" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Body -->
+
+    <div id="main" class="d-flex justify-content-center">
+        <div>
+            <!-- <div>Enola</div> -->
+            <div id="left-navbar" class="d-none flex-column align-items-center stick-to-top">
+                <span id="btnClearAllLeft" title="Clear the Screen">
+                    <i class="far fa-circle-xmark"></i>
+                </span>
+                <span id="btnSearchHistoryLeft" title="View History">
+                    <i class="fa-solid fa-clock-rotate-left" title="View History"></i>
+                </span>
+                <!-- <label class="image-description">
+                        Search History
+                    </label> -->
+                <span id="btnSaveLeft" title="Save Search Results">
+                    <i class="far fa-star"></i>
+                </span>
+                <!-- <label class="image-description">
+                                        Save Search Results
+                                    </label> -->
+                <span id="btnShareLeft" title="Share Results">
+                    <i class="fas fa-share-nodes"></i>
+                </span>
+                <!-- <label class="image-description">
+                                            Search History
+                                        </label> -->
+            </div>
+        </div>
+        <div id="primary-container" class="is-empty">
+            <!-- <div class="d-flex justify-content-between d-none d-lg-block">
+            <a href="https://www.mi1.ai/enola-feedback" class="footer screen-left">FEEDBACK</a>
+            <span class="footer screen-right">SHARE</span>
+        </div> -->
+            <div class="d-flex align-self-center w-100">
+                <!-- <div id="search-history-container" class="split col stick-to-top slide-in d-none" style="width:0px"> -->
+                <div id="search-history-container" class="_split stick-to-top slide-in" style="width:0px;">
+                    <div id="search-history-title" class="d-flex justify-content-between">
+                        <span><i class="invisible ms-auto clickable fas fa-arrow-left"></i></span>
+                        <span class="h2 rda-title">Search History</span>
+                        <span id="close-left-navbar" title="Close Search History"><i
+                                class="ms-auto clickable fas fa-arrow-left"></i></span>
+                    </div>
+                    <div id="rda-header-search-history" class="d-flex rda-header justify-content-between">
+                        <span class="invisible">
+                            <button class="btn">
+                                <i class="ms-auto save-icon clickable far fa-star"></i>
+                            </button>
+                        </span>
+                        <span class="text-center align-middle h3">
+                            <button id="previous-record" class="btn" title="Go to Previous Page">
+                                <i class="previous-record-icon clickable fas fa-square-caret-left"></i></button>
+                            <label id="search-history-navbar"></label>
+                            <button id="next-record" class="btn">
+                                <i class="next-record-icon clickable fas fa-square-caret-right"
+                                    title="Go to Next Page"></i></button>
+                        </span>
+                        <span class="d-flex align-self-center">
+                            <i id="show-favourites" class="ms-auto save-icon clickable far fa-star"
+                                title="Only Show Favourites"></i>
+                        </span>
+                    </div>
+                    <!-- <div id="search-history-filters" class="d-flex">
+                                <span id="search-filter-findings" class="search-history-line"></span>
+                            </div> -->
+                    <div id="search-history">
+                        <div id="search-history-lines">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="pane-divider"></div> -->
+
+                <div id="results-container" class="_split" style="width:100vw">
+                    <div class="rda-title h2">Enola™ Rare Disease Investigator<i id="page-info-popover"
+                            class="fa-solid fa-circle-question page-info" data-bs-toggle="popover" data-bs-html="true"
+                            data-bs-placement="auto" data-bs-trigger="hover" title="How to use"></i></div>
+                    <div id="search-section" class="positive-search stick-to-top">
+                        <div id="search-section-header" class="d-flex rda-header justify-content-between ">
+                            <span class="posneg-switch d-flex align-items-center gap-sm-3"
+                                title=" Toggle between adding Positive and Negative Findings">
+                                <label for="posneg-state" class="form-check-label fas fa-circle-plus me-2"></label>
+                                <span class="form-check form-switch">
+                                    <input type="checkbox" class="form-check-input" id="posneg-state">
+                                </span>
+                                <label for="posneg-state" class="form-check-label fas fa-circle-minus"></label>
+                            </span>
+                            <span id="beta-label" class="h3 align-self-center">BETA</span>
+                            <span class="d-none d-flex justify-content-end align-items-center gap-sm-3">
+                                <span id="btnSearchHistory" title="View History">
+                                    <i class="fas fa-clock-rotate-left"></i>
+                                </span>
+                                <span id="btnSave" title="Save Current Search">
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span id="btnShare" title="Share Current Search">
+                                    <i class="fas fa-share-nodes "></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="d-flex w-100 mb-2">
+                            <div id="editor-container" class="d-flex w-100 align-items-center">
+                                <div class="search-editor input-lg w-100" id="editor"></div>
+                            </div>
+                        </div>
+                        <div id="div-selected-terms" class="d-flex justify-content-between align-items-center d-none">
+                            <span id="selected-terms" class="d-flex flex-wrap w-100"></span>
+                            <span class="ms-auto">
+                                <span id="btnClearAll" title="Clear the Screen">
+                                    <i class="far fa-circle-xmark"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="rda-header-bookmarked-diseases"
+                        class="rda-header d-none h3 d-flex justify-content-between clickable">
+                        <span>
+                            <span class="expand-contract-icon"></span>
+                            <span>Bookmarked Diseases</span>
+                        </span>
+                    </div>
+                    <div id="bookmarked-diseases-container" class="section-container d-none"></div>
+                    <div id="rda-header-diseases" class="rda-header hide-at-start h3 mb-auto clickable">
+                        <span class="expand-contract-icon"></span>
+                        <span>Search Results Diseases</span>
+                    </div>
+                    <div id="suggestions-container" class="section-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="particles-js">
+    </div>
+
+    <script src="/node_modules/particles.js/particles.js"></script>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({ html: true });
+        $('[data-toggle="popover"]').popover({ html: true });
+    });
+</script>

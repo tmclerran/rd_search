@@ -1,0 +1,139 @@
+{
+  "user": "TimAllard",
+  "searchHistory": [
+    {
+      "datetime": "2022-10-14T14:15:16.123",
+      "searchTerms": [
+        {
+          "name": "liver failure",
+          "cui": "0001399",
+          "posneg": "pos"
+        }
+      ],
+      "saved": "false",
+      "note": "Note Text"
+    },
+    {
+      "datetime": "2022-10-14T14:17:18.123",
+      "searchTerms": [
+        {
+          "name": "Emphysema",
+          "cui": "0002097",
+          "posneg": "pos"
+        },
+        {
+          "name": "liver failure",
+          "cui": "0001399",
+          "posneg": "pos"
+        }
+      ],
+      "saved": "false",
+      "note": "Note 1"
+    },
+    {
+      "datetime": "2022-10-13T10:45:23.123",
+      "searchTerms": [
+        {
+          "name": "arterial calcification",
+          "cui": "0003207",
+          "posneg": "pos"
+        },
+        {
+          "name": "Hepatic calcification",
+          "cui": "0006559",
+          "posneg": "neg"
+        }
+      ],
+      "saved": "true",
+      "note": "Note 2"
+    },
+    {
+      "datetime": "2022-10-13T10:47:13.123",
+      "searchTerms": [
+        {
+          "name": "Abnormality of skin physiology",
+          "cui": "0006559",
+          "posneg": "pos"
+        },
+        {
+          "name": "arterial calcification",
+          "cui": "0003207",
+          "posneg": "pos"
+        },
+        {
+          "name": "Hepatic calcification",
+          "cui": "0006559",
+          "posneg": "neg"
+        }
+      ],
+      "saved": "true",
+      "note": "Note 3"
+    },
+    {
+      "datetime": "2022-10-12T11:41:25.123",
+      "searchTerms": [
+        {
+          "name": "Abnormality of skin physiology",
+          "cui": "0006559",
+          "posneg": "pos"
+        },
+        {
+          "name": "Polyhydramnios",
+          "cui": "0001561",
+          "posneg": "pos"
+        },
+        {
+          "name": "Calcification of the aorta",
+          "cui": "0004963",
+          "posneg": "neg"
+        }
+      ],
+      "saved": "true",
+      "note": "Note 4"
+    },
+    {
+      "datetime": "2022-10-12T11:43:13.123",
+      "searchTerms": [
+        {
+          "name": "Abnormality of skin physiology",
+          "cui": "0006559",
+          "posneg": "pos"
+        },
+        {
+          "name": "Polyhydramnios",
+          "cui": "0001561",
+          "posneg": "pos"
+        },
+        {
+          "name": "Hypertension",
+          "cui": "0000822",
+          "posneg": "neg"
+        }
+      ],
+      "saved": "true",
+      "note": "Note 5"
+    },
+    {
+      "datetime": "2022-10-12T11:44:23.123",
+      "searchTerms": [
+        {
+          "name": "Respiratory distress",
+          "cui": "0002098",
+          "posneg": "pos"
+        },
+        {
+          "name": "arterial calcification",
+          "cui": "0003207",
+          "posneg": "pos"
+        },
+        {
+          "name": "Hepatic calcification",
+          "cui": "0006559",
+          "posneg": "neg"
+        }
+      ],
+      "saved": "true",
+      "note": "Note 6"
+    }
+  ]
+}

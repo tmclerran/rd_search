@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve mi1_apis
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/root/mi1_apis
+Environment="PATH=/root/mi1_apis/mi1env/bin"
+ExecStart=/root/mi1_apis/mi1env/bin/gunicorn --bind :80 wsgi:app
+
+[Install]
+WantedBy=multi-user.target
